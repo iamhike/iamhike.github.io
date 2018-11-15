@@ -19,14 +19,19 @@
     <link href="https://fonts.googleapis.com/css?family=Muli:400,400i,800,800i" rel="stylesheet">
     <link href="vendor/fontawesome-free/css/all.min.css" rel="stylesheet">
 
-    <!-- Custom styles for this template -->
+  <!-- Custom styles for this template -->
     <link href="css/resume.min.css" rel="stylesheet">
-
+    <link href="css/style.css" rel="stylesheet">
   </head>
 
   <body id="page-top">
 
+    <button onclick="topFunction()" id="myBtn" title="Go to top">Top</button>
+
     <nav class="navbar navbar-expand-lg navbar-dark bg-primary fixed-top" id="sideNav">
+
+
+
       <a class="navbar-brand js-scroll-trigger" href="#page-top">
         <span class="d-block d-lg-none">Haig Alex Hovsepian</span>
         <span class="d-none d-lg-block">
@@ -247,6 +252,29 @@ action="https://formspree.io/hhovsepi@asu.edu">
 
     <!-- Custom scripts for this template -->
     <script src="js/resume.min.js"></script>
+
+    <script>
+
+    window.onscroll = function() {scrollFunction()};
+
+    function scrollFunction() {
+      if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+        document.getElementById("myBtn").style.display = "block";
+      } else {
+        document.getElementById("myBtn").style.display = "none";
+      }
+    }
+
+    function topFunction() {
+      document.body.scrollTop = 0;
+      document.documentElement.scrollTop = 0;
+      document.getElementsByClassName('lead')[0].style.color = "blue";
+      document.getElementsByClassName('lead')[0].style.fontSize = "3em";
+      document.getElementsByClassName('lead')[0].innerHTML = 'Thank you for visiting';
+    }
+  </script>
+
+
 
   </body>
 
